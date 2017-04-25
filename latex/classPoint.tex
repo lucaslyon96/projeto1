@@ -1,0 +1,230 @@
+\hypertarget{classPoint}{}\section{Point Class Reference}
+\label{classPoint}\index{Point@{Point}}
+
+
+The \hyperlink{classPoint}{Point} class eh a classe de pontos bidimensionais.  
+
+
+
+
+{\ttfamily \#include $<$point.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPoint_a30773ae254834ba9ce4661bf492cd07a}{Point} (float mx=0, float my=0)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classPoint}{Point} eh o construtor. \end{DoxyCompactList}\item 
+void \hyperlink{classPoint_acee4acaa1d515e9973145f977e500fe6}{setX} (float mx)
+\begin{DoxyCompactList}\small\item\em setX altera o valor de x \end{DoxyCompactList}\item 
+void \hyperlink{classPoint_a756b3f64d961a5059302f42e1fcf2332}{setY} (float my)
+\begin{DoxyCompactList}\small\item\em setY altera o valor de y \end{DoxyCompactList}\item 
+void \hyperlink{classPoint_afe2b937778d9fe5c135ab61de91271e9}{set\+XY} (float mx, float my)
+\begin{DoxyCompactList}\small\item\em set\+XY altera tanto o valor x quanto o valor y \end{DoxyCompactList}\item 
+float \hyperlink{classPoint_acc27466778cc87a662bba40268c4c0c8}{getX} ()
+\begin{DoxyCompactList}\small\item\em getX retorna o valor de x \end{DoxyCompactList}\item 
+float \hyperlink{classPoint_a3cccbca94719ddde353cce86ce0e2f64}{getY} ()
+\begin{DoxyCompactList}\small\item\em getY retorna o valor de y \end{DoxyCompactList}\item 
+\hyperlink{classPoint}{Point} \hyperlink{classPoint_a9dbea84b07b0a8ec3bbb9e58b3d15899}{add} (\hyperlink{classPoint}{Point} p1)
+\begin{DoxyCompactList}\small\item\em add faz a soma de dois pontos \end{DoxyCompactList}\item 
+\hyperlink{classPoint}{Point} \hyperlink{classPoint_a9cf2c53b0a4e6282a6712824bb4e9b00}{sub} (\hyperlink{classPoint}{Point} p1)
+\begin{DoxyCompactList}\small\item\em sub faz a subtracao de dois pontos \end{DoxyCompactList}\item 
+float \hyperlink{classPoint_abd2618d1f505d9392893273a66e7c9b2}{norma} ()
+\begin{DoxyCompactList}\small\item\em norma calcula a distancia do ponto ate a origem \end{DoxyCompactList}\item 
+void \hyperlink{classPoint_ad9676e36f3444534b609e3c68422239a}{translada} (float a, float b)
+\begin{DoxyCompactList}\small\item\em translada soma a em x e b em y \end{DoxyCompactList}\item 
+void \hyperlink{classPoint_a1fb5c2501c27ab2cbc99d06c2a26a741}{imprime} ()\hypertarget{classPoint_a1fb5c2501c27ab2cbc99d06c2a26a741}{}\label{classPoint_a1fb5c2501c27ab2cbc99d06c2a26a741}
+
+\begin{DoxyCompactList}\small\item\em imprime imprime o ponto na forma (a,b) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float {\bfseries x}\hypertarget{classPoint_a05dfe2dfbde813ad234b514f30e662f1}{}\label{classPoint_a05dfe2dfbde813ad234b514f30e662f1}
+
+\item 
+float {\bfseries y}\hypertarget{classPoint_a6101960c8d2d4e8ea1d32c9234bbeb8d}{}\label{classPoint_a6101960c8d2d4e8ea1d32c9234bbeb8d}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classPoint}{Point} class eh a classe de pontos bidimensionais. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Point@{Point}!Point@{Point}}
+\index{Point@{Point}!Point@{Point}}
+\subsubsection[{\texorpdfstring{Point(float mx=0, float my=0)}{Point(float mx=0, float my=0)}}]{\setlength{\rightskip}{0pt plus 5cm}Point\+::\+Point (
+\begin{DoxyParamCaption}
+\item[{float}]{mx = {\ttfamily 0}, }
+\item[{float}]{my = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\hypertarget{classPoint_a30773ae254834ba9ce4661bf492cd07a}{}\label{classPoint_a30773ae254834ba9ce4661bf492cd07a}
+
+
+\hyperlink{classPoint}{Point} eh o construtor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mx} & parametro x para criacao do ponto \\
+\hline
+{\em my} & parametro y para criacao do ponto \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Point@{Point}!add@{add}}
+\index{add@{add}!Point@{Point}}
+\subsubsection[{\texorpdfstring{add(\+Point p1)}{add(Point p1)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} Point\+::add (
+\begin{DoxyParamCaption}
+\item[{{\bf Point}}]{p1}
+\end{DoxyParamCaption}
+)}\hypertarget{classPoint_a9dbea84b07b0a8ec3bbb9e58b3d15899}{}\label{classPoint_a9dbea84b07b0a8ec3bbb9e58b3d15899}
+
+
+add faz a soma de dois pontos 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & ponto passado pelo usuario que sera somado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna a soma 
+\end{DoxyReturn}
+\index{Point@{Point}!getX@{getX}}
+\index{getX@{getX}!Point@{Point}}
+\subsubsection[{\texorpdfstring{get\+X()}{getX()}}]{\setlength{\rightskip}{0pt plus 5cm}float Point\+::getX (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classPoint_acc27466778cc87a662bba40268c4c0c8}{}\label{classPoint_acc27466778cc87a662bba40268c4c0c8}
+
+
+getX retorna o valor de x 
+
+\begin{DoxyReturn}{Returns}
+x 
+\end{DoxyReturn}
+\index{Point@{Point}!getY@{getY}}
+\index{getY@{getY}!Point@{Point}}
+\subsubsection[{\texorpdfstring{get\+Y()}{getY()}}]{\setlength{\rightskip}{0pt plus 5cm}float Point\+::getY (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classPoint_a3cccbca94719ddde353cce86ce0e2f64}{}\label{classPoint_a3cccbca94719ddde353cce86ce0e2f64}
+
+
+getY retorna o valor de y 
+
+\begin{DoxyReturn}{Returns}
+y 
+\end{DoxyReturn}
+\index{Point@{Point}!norma@{norma}}
+\index{norma@{norma}!Point@{Point}}
+\subsubsection[{\texorpdfstring{norma()}{norma()}}]{\setlength{\rightskip}{0pt plus 5cm}float Point\+::norma (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classPoint_abd2618d1f505d9392893273a66e7c9b2}{}\label{classPoint_abd2618d1f505d9392893273a66e7c9b2}
+
+
+norma calcula a distancia do ponto ate a origem 
+
+\begin{DoxyReturn}{Returns}
+a distancia/norma 
+\end{DoxyReturn}
+\index{Point@{Point}!setX@{setX}}
+\index{setX@{setX}!Point@{Point}}
+\subsubsection[{\texorpdfstring{set\+X(float mx)}{setX(float mx)}}]{\setlength{\rightskip}{0pt plus 5cm}void Point\+::setX (
+\begin{DoxyParamCaption}
+\item[{float}]{mx}
+\end{DoxyParamCaption}
+)}\hypertarget{classPoint_acee4acaa1d515e9973145f977e500fe6}{}\label{classPoint_acee4acaa1d515e9973145f977e500fe6}
+
+
+setX altera o valor de x 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mx} & novo valor passado pelo usuario \\
+\hline
+\end{DoxyParams}
+\index{Point@{Point}!set\+XY@{set\+XY}}
+\index{set\+XY@{set\+XY}!Point@{Point}}
+\subsubsection[{\texorpdfstring{set\+X\+Y(float mx, float my)}{setXY(float mx, float my)}}]{\setlength{\rightskip}{0pt plus 5cm}void Point\+::set\+XY (
+\begin{DoxyParamCaption}
+\item[{float}]{mx, }
+\item[{float}]{my}
+\end{DoxyParamCaption}
+)}\hypertarget{classPoint_afe2b937778d9fe5c135ab61de91271e9}{}\label{classPoint_afe2b937778d9fe5c135ab61de91271e9}
+
+
+set\+XY altera tanto o valor x quanto o valor y 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mx} & novo valor passado pelo usuario \\
+\hline
+{\em my} & novo valor passado pelo usuario \\
+\hline
+\end{DoxyParams}
+\index{Point@{Point}!setY@{setY}}
+\index{setY@{setY}!Point@{Point}}
+\subsubsection[{\texorpdfstring{set\+Y(float my)}{setY(float my)}}]{\setlength{\rightskip}{0pt plus 5cm}void Point\+::setY (
+\begin{DoxyParamCaption}
+\item[{float}]{my}
+\end{DoxyParamCaption}
+)}\hypertarget{classPoint_a756b3f64d961a5059302f42e1fcf2332}{}\label{classPoint_a756b3f64d961a5059302f42e1fcf2332}
+
+
+setY altera o valor de y 
+
+
+\begin{DoxyParams}{Parameters}
+{\em my} & novo valor passado pelo usuario \\
+\hline
+\end{DoxyParams}
+\index{Point@{Point}!sub@{sub}}
+\index{sub@{sub}!Point@{Point}}
+\subsubsection[{\texorpdfstring{sub(\+Point p1)}{sub(Point p1)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} Point\+::sub (
+\begin{DoxyParamCaption}
+\item[{{\bf Point}}]{p1}
+\end{DoxyParamCaption}
+)}\hypertarget{classPoint_a9cf2c53b0a4e6282a6712824bb4e9b00}{}\label{classPoint_a9cf2c53b0a4e6282a6712824bb4e9b00}
+
+
+sub faz a subtracao de dois pontos 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & ponto passado pelo usuario que sera subtraido \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna a subtracao 
+\end{DoxyReturn}
+\index{Point@{Point}!translada@{translada}}
+\index{translada@{translada}!Point@{Point}}
+\subsubsection[{\texorpdfstring{translada(float a, float b)}{translada(float a, float b)}}]{\setlength{\rightskip}{0pt plus 5cm}void Point\+::translada (
+\begin{DoxyParamCaption}
+\item[{float}]{a, }
+\item[{float}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{classPoint_ad9676e36f3444534b609e3c68422239a}{}\label{classPoint_ad9676e36f3444534b609e3c68422239a}
+
+
+translada soma a em x e b em y 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & valor passado pelo usuario para ser somado a x \\
+\hline
+{\em b} & valor passado pelo usuario para ser somado a y \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+point.\+h\item 
+point.\+cpp\end{DoxyCompactItemize}

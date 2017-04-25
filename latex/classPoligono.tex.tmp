@@ -1,0 +1,152 @@
+\hypertarget{classPoligono}{}\section{Poligono Class Reference}
+\label{classPoligono}\index{Poligono@{Poligono}}
+
+
+The \hyperlink{classPoligono}{Poligono} class eh a classe que utiliza pontos (vertices) para formar um poligono.  
+
+
+
+
+{\ttfamily \#include $<$poligono.\+h$>$}
+
+
+
+Inheritance diagram for Poligono\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPoligono_a42087ab05836b52d5fd7f5cca8442b8f}{Poligono} (\hyperlink{classPoint}{Point} p\mbox{[}M\+AX\mbox{]}, int tam)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classPoligono}{Poligono} eh construtor. \end{DoxyCompactList}\item 
+\hyperlink{classPoligono_a9311a9a1496878c09c8508b3636e2870}{Poligono} ()\hypertarget{classPoligono_a9311a9a1496878c09c8508b3636e2870}{}\label{classPoligono_a9311a9a1496878c09c8508b3636e2870}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classPoligono}{Poligono} construtor default. \end{DoxyCompactList}\item 
+void \hyperlink{classPoligono_afbd5eccfe68245188b57bc8325ec1e52}{setV} (\hyperlink{classPoint}{Point} p)
+\begin{DoxyCompactList}\small\item\em setV adiciona um ponto(vertice) ao poligono \end{DoxyCompactList}\item 
+int \hyperlink{classPoligono_ae85a10af47c78d161da3276188d24645}{getV} ()
+\begin{DoxyCompactList}\small\item\em getV funcao para saber quantos vertices tem \end{DoxyCompactList}\item 
+float \hyperlink{classPoligono_a7f66c446f86c19118663ef1b2c8a4be6}{area} ()
+\begin{DoxyCompactList}\small\item\em area calcula a area do poligono \end{DoxyCompactList}\item 
+void \hyperlink{classPoligono_add58f96cc1f1c2591ae0deba9ad99547}{trans\+\_\+pol} (float a, float b)
+\begin{DoxyCompactList}\small\item\em trans\+\_\+pol translada cada vertice do poligono em a e b \end{DoxyCompactList}\item 
+void \hyperlink{classPoligono_aee8c6acf8a1c63f23f30429d8867c312}{rot} (double teta, \hyperlink{classPoint}{Point} x)
+\begin{DoxyCompactList}\small\item\em rot rotaciona a partir do ponto x0,y0 em teta graus \end{DoxyCompactList}\item 
+void \hyperlink{classPoligono_a754dee9ed6a8fee4eb1a9d0aa0e1707a}{imprimir} ()\hypertarget{classPoligono_a754dee9ed6a8fee4eb1a9d0aa0e1707a}{}\label{classPoligono_a754dee9ed6a8fee4eb1a9d0aa0e1707a}
+
+\begin{DoxyCompactList}\small\item\em imprimir imprime o poligono na forma (x0,y0)→(x1,y1)→(x2,y2)→…​ \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classPoligono}{Poligono} class eh a classe que utiliza pontos (vertices) para formar um poligono. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Poligono@{Poligono}!Poligono@{Poligono}}
+\index{Poligono@{Poligono}!Poligono@{Poligono}}
+\subsubsection[{\texorpdfstring{Poligono(\+Point p[M\+AX], int tam)}{Poligono(Point p[MAX], int tam)}}]{\setlength{\rightskip}{0pt plus 5cm}Poligono\+::\+Poligono (
+\begin{DoxyParamCaption}
+\item[{{\bf Point}}]{p\mbox{[}\+M\+A\+X\mbox{]}, }
+\item[{int}]{tam}
+\end{DoxyParamCaption}
+)}\hypertarget{classPoligono_a42087ab05836b52d5fd7f5cca8442b8f}{}\label{classPoligono_a42087ab05836b52d5fd7f5cca8442b8f}
+
+
+\hyperlink{classPoligono}{Poligono} eh construtor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & conjunto de vertices que formam o poligono \\
+\hline
+{\em tam} & quantidade de vertices \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Poligono@{Poligono}!area@{area}}
+\index{area@{area}!Poligono@{Poligono}}
+\subsubsection[{\texorpdfstring{area()}{area()}}]{\setlength{\rightskip}{0pt plus 5cm}float Poligono\+::area (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classPoligono_a7f66c446f86c19118663ef1b2c8a4be6}{}\label{classPoligono_a7f66c446f86c19118663ef1b2c8a4be6}
+
+
+area calcula a area do poligono 
+
+\begin{DoxyReturn}{Returns}
+retorna o valor da area do poligono 
+\end{DoxyReturn}
+\index{Poligono@{Poligono}!getV@{getV}}
+\index{getV@{getV}!Poligono@{Poligono}}
+\subsubsection[{\texorpdfstring{get\+V()}{getV()}}]{\setlength{\rightskip}{0pt plus 5cm}int Poligono\+::getV (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classPoligono_ae85a10af47c78d161da3276188d24645}{}\label{classPoligono_ae85a10af47c78d161da3276188d24645}
+
+
+getV funcao para saber quantos vertices tem 
+
+\begin{DoxyReturn}{Returns}
+retorna a quantidade de vertices do poligono 
+\end{DoxyReturn}
+\index{Poligono@{Poligono}!rot@{rot}}
+\index{rot@{rot}!Poligono@{Poligono}}
+\subsubsection[{\texorpdfstring{rot(double teta, Point x)}{rot(double teta, Point x)}}]{\setlength{\rightskip}{0pt plus 5cm}void Poligono\+::rot (
+\begin{DoxyParamCaption}
+\item[{double}]{teta, }
+\item[{{\bf Point}}]{x}
+\end{DoxyParamCaption}
+)}\hypertarget{classPoligono_aee8c6acf8a1c63f23f30429d8867c312}{}\label{classPoligono_aee8c6acf8a1c63f23f30429d8867c312}
+
+
+rot rotaciona a partir do ponto x0,y0 em teta graus 
+
+
+\begin{DoxyParams}{Parameters}
+{\em teta} & angulo fornecido pelo usuario \\
+\hline
+{\em x} & ponto fornecido pelo usuario \\
+\hline
+\end{DoxyParams}
+\index{Poligono@{Poligono}!setV@{setV}}
+\index{setV@{setV}!Poligono@{Poligono}}
+\subsubsection[{\texorpdfstring{set\+V(\+Point p)}{setV(Point p)}}]{\setlength{\rightskip}{0pt plus 5cm}void Poligono\+::setV (
+\begin{DoxyParamCaption}
+\item[{{\bf Point}}]{p}
+\end{DoxyParamCaption}
+)}\hypertarget{classPoligono_afbd5eccfe68245188b57bc8325ec1e52}{}\label{classPoligono_afbd5eccfe68245188b57bc8325ec1e52}
+
+
+setV adiciona um ponto(vertice) ao poligono 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & ponto passado pelo usuario \\
+\hline
+\end{DoxyParams}
+\index{Poligono@{Poligono}!trans\+\_\+pol@{trans\+\_\+pol}}
+\index{trans\+\_\+pol@{trans\+\_\+pol}!Poligono@{Poligono}}
+\subsubsection[{\texorpdfstring{trans\+\_\+pol(float a, float b)}{trans_pol(float a, float b)}}]{\setlength{\rightskip}{0pt plus 5cm}void Poligono\+::trans\+\_\+pol (
+\begin{DoxyParamCaption}
+\item[{float}]{a, }
+\item[{float}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{classPoligono_add58f96cc1f1c2591ae0deba9ad99547}{}\label{classPoligono_add58f96cc1f1c2591ae0deba9ad99547}
+
+
+trans\+\_\+pol translada cada vertice do poligono em a e b 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & soma a em cada x \\
+\hline
+{\em b} & soma b em cada y \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+poligono.\+h\item 
+poligono.\+cpp\end{DoxyCompactItemize}
