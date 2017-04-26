@@ -66,7 +66,10 @@ using namespace std;
                 conj[i].x=m[0][0]*(conj[i].x-x.x)+m[0][1]*(conj[i].y-x.y);
                 conj[i].y=m[1][0]*(conj[i].x-x.x)+m[1][1]*(conj[i].y-x.y);
             }
-
+            for(int i=0;i<n;i++){
+                conj[i].x=conj[i].x+x.x;
+                conj[i].y=conj[i].y+x.y;
+            }
         }//rotaciona a partir do ponto x0,y0 em teta graus
         void Poligono::imprimir(){
             for(int i=0;i<n;i++){
