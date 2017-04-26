@@ -16,6 +16,7 @@ int main()
     cout<<"Area do retangulo :"<<r.area()<<endl;
     r.rot(30,p);
     r.imprimir();
+    cout<<"Area do retangulo :"<<r.area()<<endl;
     return 0;
 }
 
