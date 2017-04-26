@@ -55,21 +55,24 @@ using namespace std;
             }
         }// translada cada vertice do poligono em a e b
         void Poligono::rot(double teta,Point x){
-            double m[2][2];
-            teta=(teta*PI)/180;
-            m[0][0] = cos(teta);
-            m[0][1] =-sin(teta);
-            m[1][0] = sin(teta);
-            m[1][1] = cos(teta);
+            float cx = x.x;
+                          float cy = x.y;
+                          float angle = teta;
+                          Point p;
+                          float s = sin(angle);
+                          float c = cos(angle);
 
-            for(int i=0;i<n;i++){
-                conj[i].x=m[0][0]*(conj[i].x-x.x)+m[0][1]*(conj[i].y-x.y);
-                conj[i].y=m[1][0]*(conj[i].x-x.x)+m[1][1]*(conj[i].y-x.y);
-            }
-            for(int i=0;i<n;i++){
-                conj[i].x=conj[i].x+x.x;
-                conj[i].y=conj[i].y+x.y;
-            }
+                          // translate point back to origin:
+                          p.x -= cx;
+                          p.y -= cy;
+
+                          // rotate point
+                          float xnew = p.x * c - p.y * s;
+                          float ynew = p.x * s + p.y * c;
+
+                          // translate point back:
+                          p.x = xnew + cx;
+                          p.y = ynew + cy;
         }//rotaciona a partir do ponto x0,y0 em teta graus
         void Poligono::imprimir(){
             for(int i=0;i<n;i++){
